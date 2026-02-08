@@ -1,2 +1,20 @@
-*.unity filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.user
+*.userprefs
+
+# OS files
+.DS_Store
+Thumbs.db

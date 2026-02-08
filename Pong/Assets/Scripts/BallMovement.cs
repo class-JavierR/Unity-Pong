@@ -23,8 +23,23 @@ public class BallMovement : MonoBehaviour
         direction = new Vector2(1,1);
     }
 
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        rb.velocity = direction * speed;
+    }
     void OnCollisionEnter2D(Collision2D collision) {
         
+        ICollidable collidable = collision.gameObject.GetComponent<ICollidable>();
+        if (collidable != null)
+        {
+            collidable.OnHit(collision);
+        }
+        OnHit(collision);
+    }
+    
+    public void OnHit(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("Paddle"))
         {
             direction = new Vector2(-direction.x, direction.y);
@@ -33,11 +48,5 @@ public class BallMovement : MonoBehaviour
         {
             direction = new Vector2(direction.x, -direction.y);
         }
-
-    }
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        rb.velocity = direction * speed;
     }
 }

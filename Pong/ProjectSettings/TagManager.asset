@@ -49,5 +49,8 @@ TagManager:
   - name: Ball
     uniqueID: 1444853039
     locked: 0
+  - name: Walls
+    uniqueID: 327061755
+    locked: 0
   m_RenderingLayers:
   - Default

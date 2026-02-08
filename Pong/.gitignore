@@ -1,16 +1,27 @@
+# ======================
 # Unity generated folders
-Library/
-Temp/
-Obj/
-Build/
+# ======================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
 
-# Visual Studio / Rider / IDE files
+# ======================
+# Visual Studio / VS Code
+# ======================
+.vs/
+.vscode/
 *.csproj
 *.sln
 *.user
 *.userprefs
-*.unityproj
 
-# OS generated files
+# ======================
+# OS junk
+# ======================
 .DS_Store
 Thumbs.db
+

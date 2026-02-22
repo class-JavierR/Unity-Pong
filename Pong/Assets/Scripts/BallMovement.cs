@@ -60,4 +60,6 @@ public class BallMovement : NetworkBehaviour
             direction = new Vector2(direction.x, -direction.y);
         }
     }
+
+    
 }
